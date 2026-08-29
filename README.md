@@ -51,7 +51,8 @@ C:\accounting
 
 Each folder was used to demonstrate a different access-control scenario.
 
-![Folders Created on DC-1](https://github.com/user-attachments/assets/ADD-YOUR-IMAGE-LINK-HERE)
+![Folders Created on DC-1] <img width="2200" height="1429" alt="6E8CE3AE-C1E3-4A18-9082-926CE50D2875_1_102_o" src="https://github.com/user-attachments/assets/b259939a-bfdd-4208-a8be-18a1209c4f65" />
+
 
 ## Part 3: Configure the Read-Access Share
 
@@ -65,7 +66,8 @@ I shared the `read-access` folder with the following permissions:
 
 This configuration allowed standard domain users to open and view files but prevented them from creating, modifying, or deleting content.
 
-![Read-Access Permissions](https://github.com/user-attachments/assets/ADD-YOUR-IMAGE-LINK-HERE)
+![Read-Access Permissions] <img width="2200" height="1429" alt="353E9B33-64C7-43CC-94AF-8A21F75EC9AB_1_102_o" src="https://github.com/user-attachments/assets/2bb37468-cd4c-4efc-bcef-5a35f20f2e24" />
+
 
 ## Part 4: Configure the Write-Access Share
 
@@ -79,7 +81,7 @@ I shared the `write-access` folder with the following permissions:
 
 This configuration allowed standard domain users to view existing content and create or modify files inside the share.
 
-![Write-Access Permissions](https://github.com/user-attachments/assets/ADD-YOUR-IMAGE-LINK-HERE)
+
 
 ## Part 5: Configure the No-Access Share
 
@@ -93,7 +95,6 @@ I shared the `no-access` folder with the following permissions:
 
 Because the standard test user was not a member of Domain Admins, the user was unable to access this share.
 
-![No-Access Permissions](https://github.com/user-attachments/assets/ADD-YOUR-IMAGE-LINK-HERE)
 
 ## Part 6: Access the Shares from Client-1
 
@@ -105,7 +106,6 @@ While signed in to Client-1 as a standard domain user, I opened the Run dialog a
 
 This displayed the shared folders published by DC-1.
 
-![DC-1 Network Shares](https://github.com/user-attachments/assets/ADD-YOUR-IMAGE-LINK-HERE)
 
 ## Part 7: Test the Share Permissions
 
@@ -119,7 +119,7 @@ I tested each shared folder from Client-1 and observed the following behavior:
 
 These results confirmed that the configured permissions were working correctly.
 
-![Share Permission Testing](https://github.com/user-attachments/assets/ADD-YOUR-IMAGE-LINK-HERE)
+![Share Permission Testing] <img width="2200" height="1429" alt="BB1ED792-E572-4222-A859-CD17EFD86453_1_102_o" src="https://github.com/user-attachments/assets/48b27c42-8ca6-43d0-a6c2-e284c4e1ce94" />
 
 ## Part 8: Create the Accountants Security Group
 
@@ -133,7 +133,7 @@ On DC-1, I opened **Active Directory Users and Computers** and created a new sec
 
 Security groups allow administrators to assign permissions to a group instead of configuring each user individually.
 
-![Accountants Security Group](https://github.com/user-attachments/assets/ADD-YOUR-IMAGE-LINK-HERE)
+![Accountants Security Group] <img width="2200" height="1429" alt="2197B266-3F7E-467B-BE41-C7EFCF0E1C5C_1_102_o" src="https://github.com/user-attachments/assets/99a21e93-31e4-4d24-921a-274b2c164d6b" />
 
 ## Part 9: Configure the Accounting Share
 
@@ -147,7 +147,7 @@ I shared the `accounting` folder and assigned the following permissions:
 
 Only users who were members of the ACCOUNTANTS security group were intended to access and modify content inside this share.
 
-![Accounting Share Permissions](https://github.com/user-attachments/assets/ADD-YOUR-IMAGE-LINK-HERE)
+
 
 ## Part 10: Test Access Before Group Membership
 
@@ -159,7 +159,7 @@ I returned to Client-1 and attempted to access the accounting share while signed
 
 The attempt failed because the user was not a member of the ACCOUNTANTS security group.
 
-![Accounting Access Denied](https://github.com/user-attachments/assets/ADD-YOUR-IMAGE-LINK-HERE)
+![Accounting Access Denied] <img width="2200" height="1429" alt="38D9184B-6121-4170-8BB3-9A01A71A5C4F_1_102_o" src="https://github.com/user-attachments/assets/51455b2e-40c8-4faa-bced-d8a1196e32f4" />
 
 ## Part 11: Add the User to the Accountants Group
 
@@ -167,7 +167,8 @@ On DC-1, I returned to Active Directory Users and Computers and added the standa
 
 The user then signed out of Client-1 and signed back in. Signing in again created a new access token containing the user’s updated security-group membership.
 
-![User Added to Accountants](https://github.com/user-attachments/assets/ADD-YOUR-IMAGE-LINK-HERE)
+![User Added to Accountants] <img width="2200" height="1429" alt="3621E3DA-13D2-4A1D-AD45-4E39EC4018FC_1_102_o" src="https://github.com/user-attachments/assets/eed5ec98-f60e-432e-b629-d41d6e2fb07d" />
+
 
 ## Part 12: Verify Access After Group Membership
 
@@ -181,7 +182,7 @@ The user was now able to open the accounting share and create files because the 
 
 This confirmed that access could be managed effectively through Active Directory security-group membership.
 
-![Successful Accounting Access](https://github.com/user-attachments/assets/ADD-YOUR-IMAGE-LINK-HERE)
+
 
 ## Permission Summary
 
