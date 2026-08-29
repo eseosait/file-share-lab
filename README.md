@@ -239,11 +239,7 @@ When troubleshooting access to a network share, I would verify:
 - Troubleshooting network-share access
 - Applying the principle of least privilege
 
-## Cost Management
 
-After completing the Active Directory labs, the Azure virtual machines could be deleted if they were no longer needed. If they were retained for additional practice, they were stopped and deallocated when not in use to reduce compute charges.
-
-> Before deleting Azure resources, verify that no additional labs or files depend on them. Deleting the virtual machines and their disks can permanently remove the lab environment.
 
 ## Conclusion
 
